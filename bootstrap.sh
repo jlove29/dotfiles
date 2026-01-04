@@ -194,17 +194,6 @@ install_claude_mcp_servers() {
 			echo "    export GITHUB_TOKEN=\"ghp_your_token_here\""
 		fi
 	fi
-
-	# Install Notion MCP server if not configured
-	if ! echo "$mcp_list" | grep -q "notion"; then
-		echo "Installing Notion MCP server..."
-		claude mcp add notion -s user -e 'NOTION_TOKEN=${NOTION_API_KEY}' -- npx -y @notionhq/notion-mcp-server
-
-		if [[ -z "$NOTION_API_KEY" ]]; then
-			echo "  Warning: NOTION_API_KEY not set. Add to ~/.extra:"
-			echo "    export NOTION_API_KEY=\"ntn_your_token_here\""
-		fi
-	fi
 }
 
 sync_dotfiles() {
