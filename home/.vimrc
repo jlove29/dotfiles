@@ -9,6 +9,7 @@ set backspace=indent,eol,start " Backspace over everything
 " UI
 " ==============================================================================
 
+set mouse=a                   " Enable mouse support in all modes
 syntax on                     " Syntax highlighting
 colorscheme molokai
 set number                    " Line numbers
