@@ -3,8 +3,6 @@
 " ==============================================================================
 
 set nocompatible              " Use Vim defaults, not Vi
-set encoding=utf-8            " UTF-8 encoding
-set history=1000              " Command history
 set backspace=indent,eol,start " Backspace over everything
 
 " ==============================================================================
@@ -12,7 +10,7 @@ set backspace=indent,eol,start " Backspace over everything
 " ==============================================================================
 
 syntax on                     " Syntax highlighting
-colorscheme catppuccin_mocha  " Catppuccin theme
+colorscheme molokai
 set number                    " Line numbers
 set ruler                     " Show cursor position
 set showcmd                   " Show incomplete commands
